@@ -1,0 +1,36 @@
+<?php include("header.php"); ?>
+<?php include("menu.php"); ?>
+
+			<!-- CONTENT -->
+			<div class="content">
+                <div id="sidebar">
+                    test :)
+                </div>
+
+
+
+                <div id="articles">
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="frontpageArticle">
+
+                            <div class="postThumbnail">
+                                <?php the_post_thumbnail('thumbnail'); ?>
+                            </div>
+                            <div class="postContentTeaser">
+                                <h2 class="postTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                <p><?php printf(strip_tags(substr($post->post_content,0,256)) . "...")?></p>
+                                <p><a href="<?php the_permalink(); ?>">Read more</a></p>
+                            </div>
+
+                    </div>
+                            <?php endwhile; else: ?>
+                            <p><?php _e('There is currently no articles in this section.'); ?></p>
+                        <?php endif; ?>
+
+
+                </div>
+
+			</div>
+			<!-- END CONTENT -->
+
+<?php include("footer.php"); ?>

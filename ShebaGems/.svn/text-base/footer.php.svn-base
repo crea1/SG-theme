@@ -1,0 +1,45 @@
+			<!-- FOOTER -->
+			<div class="footer">
+				<div class="footerboxcontainer">
+					<div class="footercontent">
+						<h2>About</h2>
+						<p class="footertext">
+							With our in depth knowledge and long experience of Ethiopia we will customize your tour especially for you.
+							We will guide you from Ras Dashen's rugged peaks in the Semien Mountains to Dalol in the Danakil Depression (the lowest place in the world).
+						</p>
+					</div>
+					<div class="footercontent">
+						<h2>Contact</h2>
+						<p class="footertext">
+							info@shebagems.com <br/>
+							Norway: +47 911 301 99 <br/>
+							Sweden: +46 709 55 74 42 <br/>
+							Ethiopia: +251 911 72 97 74 <br/>
+							Ethiopia: +251 913 117 189 <br/>
+						</p>
+					</div>
+					<div class="footercontent">
+						<h2>Quick links</h2>
+						<p class="footertext">
+							Latest News <br/>
+							Staff <br/>
+							Our services <br/>
+							Ethiopia fact <br/>
+							Photo gallery <br/>
+							Rules and regulations <br/>
+							Certificates
+						</p>
+					</div>
+					<div class="footercontent">
+						<h2>Partners</h2>
+						<p class="footertext">
+							Gaudi logo etc
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END FOOTER -->
+
+		</div>
+	</body>
+</html>

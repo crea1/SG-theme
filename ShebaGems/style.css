@@ -1,0 +1,213 @@
+    /*
+        Theme Name: ShebaGems
+        Theme URI: http://www.shebagems.com
+        Description: Sheba Gems theme for selling Opals
+        Version: 0.1
+        Author: MJ & MHK
+        Author URI: http://www.suiram.org
+    */
+
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+
+body { font-family: arial, sans-serif; color: #716F70; font-size: 1.0em; }
+h1 { font-family: georgia,serif; font-size: 1.4em; margin: 0 0 15px;}
+h2 { font-family: georgia,serif; font-size: 1.3em; }
+h3 { font-family: georgia,serif; font-size: 1.2em; }
+h4 { font-family: georgia,serif; font-size: 1.1em; }
+a { color: #716F70;}
+a:hover { color: #000; }
+p { line-height: 120%; }
+.entry-content h1 { clear: both; }
+.entry-content h2 { clear: both; }
+.entry-content h3 { clear: both; }
+.entry-content h4 { clear: both; }
+.entry-content ul { padding-left: 15px; line-height: 120%; clear: both; }
+.alignright { float: right; margin:0 0 0 5px;}
+.alignleft { float: left; margin:0 5px 0 0;}
+
+#access { margin-bottom: 20px; }
+
+.page { width:960px; margin: 0 auto; padding:0; }
+.header { position:relative;  width:100%;	height: 170px; }
+.logopic { position:relative; margin-left:auto; margin-right:auto; top: 35px; height: 90px; width: 225px; background-color: #F4F4F4;	}
+/*------------------------------------*\
+	SEARCHBAR
+\*------------------------------------*/
+
+.searchwrapper {
+	position:absolute;
+	right: 0;
+	top: 150px;
+	height: 15px;
+	width: 160px;
+}
+
+.searchwrapper form { 
+	display:inline; 
+}
+
+input.searchbox {
+	border:0; /*important*/
+	/*background-color:transparent; /*important*/
+	background-color: #00ffff;
+	position:absolute; /*important*/
+	top:4px;
+	left:9px;
+}
+
+/*------------------------------------*\
+	
+\*------------------------------------*/
+
+.horisintalmenu {
+	width: 100%;
+	height: 30px;
+	margin: 0;
+}
+
+.content {
+	margin:0;
+	padding:0;	
+	width:100%;	
+}
+
+#sidebar {
+    margin: 60px 0 0;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    width: 250px;
+    min-height: 250px;
+}
+
+#articles {
+    position: relative;
+    overflow: hidden;
+    /*padding-left: 20px;*/
+    color: #716F70;
+    width: 670px;
+}
+.post {
+    position: relative;
+    overflow: hidden;
+    /*padding-left: 20px;*/
+    color: #716F70;
+    width: 670px;
+}
+.frontpageArticle {
+    margin: 30px 0;
+    width:100%;
+    height: 150px;
+}
+.postThumbnail { float: left; width: 150px; }
+.postContentTeaser { margin-left: 170px; }
+h2.postTitle { font-family: georgia,serif; font-size: 20px; font-weight: bold; margin-bottom: 10px;}
+h2.postTitle a { text-decoration: none; }
+.entry-header { /*border-bottom: 1px solid #716F70;*/ border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #716F70;}
+.entry-content { margin-top: 10px; }
+.entry-title { font-size: 1.6em; margin:15px 0; }
+
+/*------------------------------------*\
+	FOOTER
+\*------------------------------------*/
+
+.footer {
+    border-top: 1px solid #716F70;
+	margin:60px 0 20px 0;
+	padding:0;	
+	width:100%;	
+}
+
+.footerboxcontainer {
+	width:960px;
+	text-align: center;
+	letter-spacing: 23px;  /*space between boxes*/
+	white-space: nowrap;  
+	overflow: hidden;  
+	margin: 20px 0 0 0;
+}
+
+.footercontent {
+	display: inline-block;
+	vertical-align: top; 
+	width: 220px;
+	/*height: 200px;
+	background-color: #F4F4F4;*/
+	letter-spacing: normal;
+	font-size: 100%;
+	white-space: normal;
+	text-align: left;
+}
+.footercontent {
+	*display: inline;
+	*margin: 0 10px 0 10px;
+	font-size: 14px;
+}
+
+.footercontent h2 {
+	font-family: georgia, serif;
+}
+
+
+/*------------------------------------*\
+	NAVIGATION
+\*------------------------------------*/
+#menu-mainmenu{
+	list-style:none;
+	font-weight:normal;
+	/* Clear floats */
+	/*float:left;*/
+	/* Bring the nav above everything else--uncomment if needed.*/
+	position:relative;
+	z-index:5;
+
+	font-family: georgia,serif;
+	height: 30px;
+}
+#menu-mainmenu li{
+	float:left;
+	margin-right:10px;
+	position:relative;
+}
+#menu-mainmenu a{
+	display:block;
+	padding:5px;
+	color:#716F70;
+	background:#ffffff;
+	text-decoration:none;
+}
+#menu-mainmenu a:hover{
+	color:#000000;
+	background:#ffffff;
+	text-decoration:underline;
+}	
+
+/*--- DROPDOWN ---*/
+#menu-mainmenu ul{
+	background:#ffffff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#menu-mainmenu ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+#menu-mainmenu ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#menu-mainmenu li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+#menu-mainmenu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:#ffffff;
+	text-decoration:underline;
+}
+#menu-mainmenu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#menu-mainmenu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#ffffff;
+}

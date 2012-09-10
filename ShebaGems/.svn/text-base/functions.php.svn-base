@@ -1,0 +1,11 @@
+<?php
+/**
+ * User: Marius Haugli Kristensen
+ * Date: 12.11.11
+ * Time: 16:05
+ */
+
+
+add_theme_support( 'post-thumbnails' );
+
+?>
