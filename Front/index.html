@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Sheba Gems" />
+		<meta name="Keywords" content="sheba gems, opals, shop" />
+		<meta name="Description" content="Sheba Gems" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="reset.css" media="screen" type="text/css" />
+		<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+		<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//Hide the boxSlide when page load
+				$(".boxSlideLeft").hide();
+				$(".boxSlideRight").hide();
+				//slide up and down when hover over box link
+				$(".boxes").hover(function(){
+					// slide toggle effect set to fast
+					jQuery(".boxSlideLeft", this).slideToggle("fast");
+					return true;
+				});
+				$(".boxes").hover(function(){
+					// slide toggle effect set to fast
+					jQuery(".boxSlideRight", this).slideToggle("fast");
+					return true;
+				});
+			});
+		</script>
+
+		<title>Sheba Gems</title>
+	</head>
+	<body>
+		<h1 class="hidden">Sheba Gems</h1>
+		<div id="main">
+			<div id="logo"></div>
+			<div id="boxReflectR">
+
+				<div id="boxShadow">
+					<div id="images">
+						<div id="boxLeft" class="boxes">
+							
+							<div class="boxText"><a href="http://www.shebagems.com/wordpress/">News</a></div>
+							<div class="boxSlideLeft" onClick="parent.location='http://www.shebagems.com/wordpress/'"></div>
+						</div>
+						<div id="boxRight" class="boxes">
+							<div class="boxText"><a href="http://www.bangkokgemmart.com/ProductGallery.aspx?PCate=1&PType=25">Shop</a></div>
+							<div class="boxSlideRight" onClick="parent.location='http://www.bangkokgemmart.com/ProductGallery.aspx?PCate=1&PType=25'"></div>
+						</div>
+						<div id="boxReflectL"></div>
+					</div>
+				</div>
+				<div id="lowerInfo">
+					<p>
+						Exploit your natural resources.<br /><br />
+						But always remember that these resources also belong to the local community.
+						<br /><br /><a href="mailto:info@shebagems.com">info@shebagems.com</a>
+					</p>
+			</div>
+			</div>
+		</div>
+
+
+
+	</body>
+</html>

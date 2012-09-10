@@ -1,0 +1,35 @@
+/*  
+Author: Marius Haugli Kristensen
+Author URI: http://kwc.suiram.org
+Version: 1.0
+Description: Created by Kristensen Web Consulting
+Tags: Sheba Gems
+*/
+
+body           			{ background-image:url('images/bodybg.png'); background-repeat:repeat-x; font:15px Georgia,sans-serif; color: #9f9f9f; text-align: center;}
+.hidden							{ visibility:hidden; display: none; }
+#main          			{ width:714px; margin: auto; }
+#logo          			{ background-image:url('images/logo.png');  width:250px; height:100px; margin: 50px auto; }
+#upperInfo     			{ font-size: 22px; margin-bottom:40px;}
+#boxReflectR   			{ height: 588px; background-image:url('images/reflect.png'); background-repeat: no-repeat; background-position:57px 285px; }
+#boxReflectL   			{ height: 588px; background-image:url('images/reflect.png'); background-repeat: no-repeat; background-position:315px 285px; z-index:-1; }
+#boxShadow     			{ background-image:url('images/shadowbox.png'); background-repeat: no-repeat; height:303px; background-position:center bottom;  }
+#images        			{ width:600px; color: #fff; font-size: 27px; margin: auto; }
+#boxLeft 			{ background-image:url('images/newsbox.jpg'); background-repeat: no-repeat; width: 285px; height: 285px; margin-right:15px; }
+#boxRight       			{ background-image:url('images/shopbox.jpg'); background-repeat: no-repeat; width: 285px; height: 285px; margin-left:15px;}
+.boxes         			{ float: left; position:relative; display:block; }
+.boxText       			{ background-image:url('images/overlaybar.png'); height:37px; padding:12px; }
+.boxSlideLeft { background-image:url('images/overlaynews.jpg'); background-repeat: no-repeat; height:224px; font-size:14px; color: #9f9f9f; cursor:pointer; }
+.boxSlideRight       { background-image:url('images/overlayshop.jpg'); background-repeat: no-repeat; height:224px; font-size:14px; color: #9f9f9f; cursor:pointer; }
+#lowerInfo     			{ clear:both; width:600px; color: #9f9f9f; font-size: 19px; margin: auto; }
+#lowerInfo p   			{ padding-top: 30px; }
+
+/** Links **/
+.boxText a:link, .boxText a:visited, .boxText a:hover { color: #fff; }
+a:link, a:visited { text-decoration: none; color: #9f9f9f; }
+a:hover        { color: #D0A9F5; }
+
+/** Text selection **/
+::selection { color: #D0A9F5; }
+::-moz-selection { color: #D0A9F5; }
+::-webkit-selection { color: #D0A9F5; }
